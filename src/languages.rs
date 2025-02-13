@@ -9,9 +9,11 @@ mod javascript;
 mod rust;
 mod sh;
 mod toml;
+mod x86asm;
 
 pub use c::C;
 pub use javascript::JavaScript;
 pub use rust::Rust;
 pub use sh::Sh;
 pub use toml::Toml;
+pub use x86asm::X86Asm;

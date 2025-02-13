@@ -145,6 +145,7 @@ impl<'a, I: Iterator<Item = Event<'a>>> Iterator for SyntaxPreprocessor<'a, I> {
             "js" | "javascript" => highlight::<languages::JavaScript>(&code, &mut html),
             "toml" => highlight::<languages::Toml>(&code, &mut html),
             "sh" | "shell" | "bash" => highlight::<languages::Sh>(&code, &mut html),
+            "x86asm" | "asm" => highlight::<languages::X86Asm>(&code, &mut html),
             _ => write_escaped(&mut html, &code),
         }
 
